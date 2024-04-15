@@ -1,4 +1,5 @@
 header {
+  
   color: aliceblue;
   background-color: black;
   height: max-content;
@@ -6,15 +7,23 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position:fixed;
+  top: 0;
 
   div {
     width: 20%;
     display: flex;
     flex-direction: row;
     align-items: center;
+    gap: 5px;
     margin: 1px;
-    img {
-      height: 10vh;
+    #profile-picture {
+      height: 8vh;
+      border: solid 2px oklch(61.42% .238 15.34);
+      border-radius: 50%;
+    }
+    #verified-icon{
+      height: 3vh;
     }
   }
   ul {
@@ -23,13 +32,19 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-
     li {
       margin: 3%;
-      a {
+      a{
+        font-size: 20px;
         color: aliceblue;
         text-decoration: none;
+      }
+      a:hover{
+        color: oklch(61.42% .238 15.34);
+        transition: all 0.5s ease ;
+        
       }
     }
   }
 }
+

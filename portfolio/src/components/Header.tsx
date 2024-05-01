@@ -1,7 +1,7 @@
 
 function Header() {
     
-    return <nav className="navbar navbar-expand-lg bg-body-tertiary">
+    return <nav className=" navbar navbar-expand-lg bg-body-tertiary">
                 <div className="container-fluid">
                         <div className="navbar-brand">
                         <img src="https://cdn-icons-png.flaticon.com/512/149/149071.png " width="40" height="50" alt="" title="" className="navbar-brand"></img>

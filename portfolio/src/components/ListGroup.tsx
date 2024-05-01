@@ -13,6 +13,7 @@ function ListGroup({items,heading,onSelectItem}: Props) {
   return (
     <>
       <h2 className="text-center">{heading}</h2>
+      <span className="fs-4">Filter by:</span>
       <ul className="list-group">
         {items.map((language,index) => (
           <li key={language} className={isActive === index ? "list-group-item active" : "list-group-item"} onClick={() => {setSelectedIndex(index)
@@ -22,7 +23,6 @@ function ListGroup({items,heading,onSelectItem}: Props) {
           </li>
         ))}
       </ul>
-      
     </>
   );
 }

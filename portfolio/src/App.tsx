@@ -3,6 +3,7 @@ import About from "./components/About";
 import Slogan from "./components/Slogan";
 import Profile from "./components/Profile";
 import ListGroup from "./components/ListGroup";
+import Projects from "./components/Projects";
 import Footer from "./components/Footer";
 
 function App() {
@@ -15,9 +16,10 @@ function App() {
           <Header/>
           <Slogan/>
           <Profile/>
-          <div className="mt-3">
+          <div className="mt-5">
            <ListGroup items={languages} heading="Languages: Projects and skills" onSelectItem={handleSelectedItem}/>
           </div>
+          <Projects/>
           <Footer/>
         </>
 }
